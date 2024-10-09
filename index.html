@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliniqq - Doctor Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Cliniqq</h1>
+        <nav>
+            <a href="#appointments">Book Appointment</a>
+            <a href="#doctors">Our Doctors</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="appointments">
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="doctor">Select Doctor:</label>
+                <select id="doctor" required>
+                    <option value="">Select...</option>
+                    <option value="doctor1">Dr. Smith</option>
+                    <option value="doctor2">Dr. Johnson</option>
+                </select>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" required>
+
+                <button type="submit">Book Appointment</button>
+            </form>
+            <div id="confirmation"></div>
+        </section>
+
+        <section id="doctors">
+            <h2>Our Doctors</h2>
+            <ul>
+                <li>Dr. Smith - Cardiologist</li>
+                <li>Dr. Johnson - Dermatologist</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cliniqq. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
